@@ -5,8 +5,8 @@ export interface FindClientInputDTO {
 export interface FindClientOutputDTO {
     id: string;
     name: string;
-    email: string;
     address: string;
+    email: string;
     createdAt: Date;
     updatedAt: Date;
 }

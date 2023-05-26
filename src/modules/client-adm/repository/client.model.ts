@@ -14,10 +14,10 @@ export default class ClientModel extends Model {
     name: string;
 
     @Column({allowNull:false})
-    email: string;
+    address: string;
 
     @Column({allowNull:false})
-    address: string;
+    email: string;
 
     @Column({allowNull:false})
     createdAt: Date;

@@ -15,14 +15,14 @@ describe("Add client use case unit tests", () => {
         const input = {
             name: "Clientezinho 1",
             email: "cliente@zin.ho",
-            address: "Enderecinho do clientezinho"
+            address: "Rua 1"
         };
 
         const result = await uc.execute(input);
         expect(rep.add).toHaveBeenCalled();
         expect(result.id).toBeDefined();
         expect(result.name).toEqual(input.name);
-        expect(result.email).toEqual(input.email);
         expect(result.address).toEqual(input.address);
+        expect(result.email).toEqual(input.email);
     });
 });

@@ -49,6 +49,7 @@ describe("Client Adm Facade unit tests", () => {
             id: "1",
             name: "Clientezinho",
             email: "cliente@zin.ho",
+            document: "123",
             address: "Enderecinho do clientezinho",
             createdAt: new Date(),
             updatedAt: new Date()

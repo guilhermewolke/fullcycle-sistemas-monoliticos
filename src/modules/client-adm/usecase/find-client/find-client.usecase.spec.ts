@@ -6,7 +6,7 @@ const client = new Client({
     id: new ID("1"),
     name: "Clientezinho 1",
     email: "cliente@zin.ho",
-    address: "Enderecinho do clientezinho"
+    address: "Rua 1"
 });
 
 

@@ -29,8 +29,8 @@ export default class ClientRepository implements ClientGateway {
         return new Client({
             id: new ID(client.dataValues.id),
             name: client.dataValues.name,
-            email: client.dataValues.email,
             address: client.dataValues.address,
+            email: client.dataValues.email,
             createdAt: client.dataValues.createdAt,
             updatedAt: client.dataValues.updatedAt
         });

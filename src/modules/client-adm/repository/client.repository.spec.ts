@@ -27,8 +27,8 @@ describe("Client repository unit tests", () => {
         const client = new Client({
             id: new ID("1"),
             name: "Clientezinho",
-            email: "cliente@zin.ho",
-            address: "Enderecinho do clientezinho"
+            address: "Enderecinho do clientezinho",
+            email: "cliente@zin.ho"
         });
 
         const rep = new ClientRepository();
@@ -39,8 +39,8 @@ describe("Client repository unit tests", () => {
         expect(clientDB).toBeDefined();
         expect(clientDB.dataValues.id).toBe("1");
         expect(clientDB.dataValues.name).toBe("Clientezinho");
-        expect(clientDB.dataValues.email).toBe("cliente@zin.ho");
         expect(clientDB.dataValues.address).toBe("Enderecinho do clientezinho");
+        expect(clientDB.dataValues.email).toBe("cliente@zin.ho");
 
     });
 
@@ -49,7 +49,7 @@ describe("Client repository unit tests", () => {
             id: "1",
             name: "Clientezinho",
             email: "cliente@zin.ho",
-            address: "Enderecinho do clientezinho",
+            address: "Rua 1",
             createdAt: new Date(),
             updatedAt: new Date()
         });

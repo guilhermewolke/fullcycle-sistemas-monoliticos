@@ -1,4 +1,5 @@
-import { Column, Model, PrimaryKey, Table } from "sequelize-typescript";
+import { BelongsTo, Column, Model, PrimaryKey, Table } from "sequelize-typescript";
+import InvoiceItemModel from "../../invoice/repository/invoice-product.model";
 
 @Table({
     tableName: "products",
